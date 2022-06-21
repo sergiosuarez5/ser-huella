@@ -53,6 +53,7 @@ h5 {
     width: 50px;
     height: 50px;
     background: #CDC2AE;
+    font-size: 12px;
     bottom: 40px;
     right: 50px;
 
@@ -196,7 +197,7 @@ h5 {
 .hero-container h1 {
     padding: 40px 20px;
     font-family:  serif;
-    font-size: 10px;
+    font-size: 18px;
     margin: 30px 0 10px 0;
     text-align: center;
     text-transform: uppercase;
@@ -377,6 +378,7 @@ h5 {
 }
 
 .detail__text-box {
+    color: #393E46;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,7 +397,7 @@ h5 {
 }
 
 .detail__text-box h2 {
-    color: #23303e;
+    color: #393E46;
     font-family: "Fraunces", serif;
     margin: 25px;
 }
@@ -728,3 +730,81 @@ h5 {
         margin: 40px auto;
     }
 }
+
+/* fomulario contacto */
+
+form {
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    width: 300px;
+    margin: auto;
+    background: #229797;
+    border: solid 1px #fff;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    /* BUTTON SEND */
+    }
+    form input, form textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
+    form textarea {
+        min-height: 80px;
+        min-height: 200px;
+        max-width: 100%;
+        border-radius: 7px;
+    }
+    form input {
+        border-radius: 15px;
+    }
+    form .gender {
+        justify-content: left;
+    }
+    form .button-send {
+        font-family: inherit;
+        font-size: 20px;
+        background: #a38867;
+        color: white;
+        padding: 0.5em 2em;
+        padding-left: 8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: all 0.2s;
+        }
+    form .button-send span {
+        display: block;
+        margin-left: 0.1em;
+        transition: all 0.3s ease-in-out;
+    }
+    form .button-send svg {
+        display: block;
+        transform-origin: center center;
+        transition: transform 0.3s ease-in-out;
+    }
+    form .button-send svg:hover {
+        transform: translate(5em);
+    }
+    form .button-send .svg-wrapper:hover {
+        animation: fly-1 0.6s ease-in-out infinite alternate;
+    }
+    form .button-send .button-send:active {
+        transform: scale(0.95);
+    }
+    @keyframes fly-1 {
+        from {
+        transform: translateY(0.1em);
+        }
+        to {
+        transform: translateY(-0.1em);
+        }
+    }
+    
