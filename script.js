@@ -52,22 +52,22 @@ window.addEventListener("resize", defaultPage);
 
 /*Funcion externa*/
 //funcion que permite un scroll suavizado entre secciones
-const links = document.querySelectorAll('a');
+// const links = document.querySelectorAll('a');
 
-links.forEach((link) => {
+// links.forEach((link) => {
 
-    link.addEventListener('click', (e) => {
+//     link.addEventListener('click', (e) => {
         
-        const target = e.currentTarget.getAttribute('href');
+//         const target = e.currentTarget.getAttribute('href');
 
-        e.preventDefault();
-        replegarMenu();
-        document.querySelector(target).scrollIntoView(
-        {
-            behavior: 'smooth'
-        });
+//         e.preventDefault();
+//         replegarMenu();
+//         document.querySelector(target).scrollIntoView(
+//         {
+//             behavior: 'smooth'
+//         });
 
-    });
+//     });
 
-}); 
+// }); 
 /*Fuente: https://www.kodetop.com/efecto-smooth-scroll-con-css-o-javascript/  */
